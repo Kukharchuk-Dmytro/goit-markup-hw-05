@@ -40,10 +40,6 @@ body {
   padding: 0;
   text-decoration: 250ms;
 }
-.link:hover,
-.link:focus {
-  --color4: var(--colore-focus);
-}
 
 .site-nav .link.active {
   color: var(--colore-focus);
@@ -90,7 +86,7 @@ body {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition-duration: 200ms;
+  transition-duration: 250ms;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -120,20 +116,33 @@ body {
   margin-left: 30px;
 }
 
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.link:focus,
+.link:hover {
+  fill: #2196f3;
   color: var(--colore-focus);
 }
 
 .email {
-  height: 16px;
+  fill: #757575;
   margin-right: 10px;
+  height: 16px;
+  transition-duration: 250ms;
+}
+.email:hover,
+.email:focus {
+  fill: #2196f3;
 }
 
 .phone {
-  width: 15px;
-  margin-right: 10px;
   fill: #757575;
+  margin-right: 10px;
+  width: 15px;
+  transition-duration: 250ms;
+}
+.phone:hover,
+.phone:focus {
+  fill: #2196f3;
+  color: var(--colore-focus);
 }
 
 .hero {
