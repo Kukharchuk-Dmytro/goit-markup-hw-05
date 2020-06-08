@@ -40,8 +40,23 @@ body {
   padding: 0;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .site-nav .link.active {
   color: var(--colore-focus);
+}
+
+.site-nav .link.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--colore-focus);
+  border-radius: 2px;
 }
 /* логотип */
 .logo {
@@ -76,6 +91,7 @@ body {
 }
 
 .site-nav .link {
+  position: relative;
   display: flex;
   color: var(--colore-heading);
   font-weight: 500;
@@ -633,7 +649,7 @@ text-transform: uppercase; */
 
 .container-link :hover,
 .container-link :focus {
-  color: var(--colore-backgraund);
+  color: #ffffff;
   background-color: var(--colore-focus);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 3px 1px rgba(0, 0, 0, 0.1);
